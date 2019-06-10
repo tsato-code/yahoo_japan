@@ -30,4 +30,3 @@ class YahooJapanNewsDetailItem(scrapy.Item):
     url = scrapy.Field()
     title = scrapy.Field()
     category = scrapy.Field()
-    # num_comments = scrapy.Field()  # 2019-06-06
