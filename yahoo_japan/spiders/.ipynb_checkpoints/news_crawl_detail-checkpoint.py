@@ -31,4 +31,9 @@ class NewsCrawlDetailSpider(CrawlSpider):
         item['url'] = response.url
         item['title'] = response.css('div.tpcNews_header h2::text').extract_first()
         item['category'] = response.css('ul#gnSec li.current a::text').extract_first()
+        # print("= "*80)
+        # print(response.body.decode('utf-8'))
+        # import json
+        # data = json.loads(response.body.decode('utf-8'))
+        # print("= "*80)
         return item
